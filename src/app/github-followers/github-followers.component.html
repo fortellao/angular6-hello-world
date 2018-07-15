@@ -1,0 +1,15 @@
+<div
+  *ngFor="let follower of followers"
+  class="media">
+  <div class="media-left media-top">
+    <img [src]="follower.avatar_url" class="media-object">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <a
+        [routerLink]="['/followers', follower.login]"
+        [queryParams]="{ query: 1, other: 'nothing' }">{{ follower.login }}</a>
+    </h4>
+    <a [href]="follower.url">{{follower.url}}</a>
+  </div>
+</div>

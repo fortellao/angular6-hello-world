@@ -1,0 +1,15 @@
+img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+div.media {
+    padding: 15px;
+    border: 1px lightgray solid;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+div.media-body {
+    margin-left: 20px;
+}

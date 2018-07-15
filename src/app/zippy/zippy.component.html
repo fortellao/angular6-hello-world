@@ -1,0 +1,14 @@
+<div class="zippy">
+  <div (click)="toggle()" class="zippy-heading" [class.zippy-heading-expanded]="deployed">
+    {{title}}
+    <span class="fas"
+      [ngClass]="{
+        'fa-angle-double-down':!deployed,
+        'fa-angle-double-up':deployed
+      }"></span>
+    
+  </div>
+  <div [hidden]="!deployed" class="zippy-content">
+    <ng-content></ng-content>
+  </div>
+</div>

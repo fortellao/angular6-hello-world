@@ -1,0 +1,8 @@
+.fa-heart {
+    color: grey;
+    cursor: pointer;
+}
+
+.fa-heart.highlighted {
+    color: red;
+}
